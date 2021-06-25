@@ -49,7 +49,7 @@ In the file *excel_handler.py* are implemented the following three functions:
 - ```def worksheet_places(places_list, workbook, sheetname)```, it creates a worksheet with the name sheetname in the workbook and fills it with the places_list (the places from the tweets' geolocation information);
 
 ## How to use
-In the file *main.py* there is a example of a possible usage:
+In the file *main.py* there is an example of a possible usage:
 ```
 username = 'user'
 start_time = "2006-03-21T00:00:00.000Z"
