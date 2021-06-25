@@ -7,8 +7,7 @@ def create_workbook(filename):
     return workbook
 
 
-def worksheet_timeline(json_response, workbook, username):
-    # print(json_response)
+def worksheet_timeline(data_list, workbook, username):
     # formating for excel
     format_center_bold = workbook.add_format()
 
@@ -48,7 +47,7 @@ def worksheet_timeline(json_response, workbook, username):
 
     row = 1
     # Loop through each tweet
-    for tweet in json_response:  # ['data']:
+    for tweet in data_list: 
 
         # We will create a variable for each since some of the keys might not exist for some tweets
         # So we will account for that
@@ -123,7 +122,7 @@ def worksheet_timeline(json_response, workbook, username):
         row = row + 1
 
 
-def worksheet_users(json_response, workbook, sheetname):
+def worksheet_users(user_list, workbook, sheetname):
 
     format_center_bold = workbook.add_format()
 
@@ -159,7 +158,7 @@ def worksheet_users(json_response, workbook, sheetname):
 
     row = 1
     # Loop through each user
-    for user in json_response:
+    for user in user_list:
 
         # We will create a variable for each since some of the keys might not exist for some tweets
         # So we will account for that
@@ -205,7 +204,7 @@ def worksheet_users(json_response, workbook, sheetname):
 
         row = row + 1
 
-def worksheet_places(json_response, workbook, sheetname):
+def worksheet_places(places_list, workbook, sheetname):
     format_center_bold = workbook.add_format()
 
     format_center_bold.set_align('center')
@@ -227,7 +226,7 @@ def worksheet_places(json_response, workbook, sheetname):
 
     row = 1
     # Loop through each place
-    for place in json_response:
+    for place in places_list:
 
         # We will create a variable for each since some of the keys might not exist for some tweets
         # So we will account for that
@@ -246,7 +245,3 @@ def worksheet_places(json_response, workbook, sheetname):
 
 
 
-
-# workbook = create_workbook('excels/new.xlsx')
-# create_worksheet(workbook, 'rita')
-# workbook.close()
