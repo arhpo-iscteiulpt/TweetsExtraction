@@ -6,7 +6,7 @@ start_time = "2006-03-21T00:00:00.000Z"
 end_time = "2021-05-31T00:00:00.000Z"
 max_results = 500
 
-workbook = create_workbook('excels/' + username + '.xlsx')
+workbook = create_workbook(username + '.xlsx')
 
 tweets, users, places = get_all(username, max_results, start_time, end_time)
 
