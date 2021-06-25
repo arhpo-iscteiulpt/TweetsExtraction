@@ -52,3 +52,19 @@ In the file *excel_handler.py* are implemented the following three functions:
 
 ## How to use
 In the file *main.py* there is a example of a possible usage:
+```
+username = 'user'
+start_time = "2006-03-21T00:00:00.000Z"
+end_time = "2021-05-31T00:00:00.000Z"
+max_results = 500
+
+workbook = create_workbook(username + '.xlsx')
+
+tweets, users, places = get_all(username, max_results, start_time, end_time)
+
+worksheet_timeline(tweets, workbook, username)
+worksheet_users(users, workbook, 'users_' + username)
+worksheet_places(places, workbook, 'places_' + username)
+
+workbook.close()
+```
