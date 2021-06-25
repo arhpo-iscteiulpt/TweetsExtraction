@@ -1,5 +1,5 @@
 # Twitter Timeline Extraction (API v2)
-A script to create an endpoint with Twitter API Get v2, extract tweets from a user and save them into an excel file (.xlsx). Based on a *Towards Data Science* tutorial, access [here](https://towardsdatascience.com/an-extensive-guide-to-collecting-tweets-from-twitter-api-v2-for-academic-research-using-python-3-518fcb71df2a) (last accessed date 25/06/2021).
+A script to create an endpoint with Twitter API Get v2, extract tweets from an user and save them into an excel file (.xlsx). Based on a *Towards Data Science* tutorial, access [here](https://towardsdatascience.com/an-extensive-guide-to-collecting-tweets-from-twitter-api-v2-for-academic-research-using-python-3-518fcb71df2a) (last accessed date 25/06/2021).
 
 **Note:** You need Academic Research Access, know more [here](https://developer.twitter.com/en/products/twitter-api/academic-research).
 
